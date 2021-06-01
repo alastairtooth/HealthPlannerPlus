@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planner Page View Controller-->
+        <scene sceneID="MBP-Ey-rD1">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4JG-tM-axL" customClass="PlannerPageViewController" customModule="FoodPlanner_" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asF-es-cEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="4047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Uvt-Co-7sm">
+            <objects>
+                <viewController storyboardIdentifier="TutorialOneController" id="8Nf-bW-RBL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gfn-fa-qhP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSplash" translatesAutoresizingMaskIntoConstraints="NO" id="8Oe-fi-ixs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO HEALTH PLANNER+" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEu-fl-naE" customClass="ATHeaderStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="405" width="374" height="86"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your tool for planning a healthier living" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R41-XC-xKA" customClass="ATBodyStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="10" y="541" width="414" height="75"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VC Inv" translatesAutoresizingMaskIntoConstraints="NO" id="qC8-Wz-w25">
+                                <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OjU-Z3-J3S"/>
+                                    <constraint firstAttribute="width" constant="100" id="n4U-oo-Tdx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oH4-Lt-wwa"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Oe-fi-ixs" firstAttribute="leading" secondItem="oH4-Lt-wwa" secondAttribute="leading" id="2Io-9k-3Z9"/>
+                            <constraint firstItem="R41-XC-xKA" firstAttribute="top" secondItem="QEu-fl-naE" secondAttribute="bottom" constant="50" id="I3D-cA-7BE"/>
+                            <constraint firstItem="qC8-Wz-w25" firstAttribute="leading" secondItem="oH4-Lt-wwa" secondAttribute="leading" id="RmO-9l-j5r"/>
+                            <constraint firstItem="8Oe-fi-ixs" firstAttribute="trailing" secondItem="oH4-Lt-wwa" secondAttribute="trailing" id="SN5-bv-EAA"/>
+                            <constraint firstItem="R41-XC-xKA" firstAttribute="trailing" secondItem="oH4-Lt-wwa" secondAttribute="trailing" constant="10" id="UMI-tV-PO6"/>
+                            <constraint firstItem="oH4-Lt-wwa" firstAttribute="trailing" secondItem="QEu-fl-naE" secondAttribute="trailing" constant="20" id="iN5-Dc-f3t"/>
+                            <constraint firstAttribute="bottom" secondItem="8Oe-fi-ixs" secondAttribute="bottom" id="ihF-59-9Yy"/>
+                            <constraint firstItem="R41-XC-xKA" firstAttribute="leading" secondItem="oH4-Lt-wwa" secondAttribute="leading" constant="10" id="jYQ-fE-pue"/>
+                            <constraint firstItem="8Oe-fi-ixs" firstAttribute="top" secondItem="gfn-fa-qhP" secondAttribute="top" id="kRC-vS-gs5"/>
+                            <constraint firstItem="qC8-Wz-w25" firstAttribute="top" secondItem="oH4-Lt-wwa" secondAttribute="top" id="or5-Jx-Hxn"/>
+                            <constraint firstItem="QEu-fl-naE" firstAttribute="centerX" secondItem="gfn-fa-qhP" secondAttribute="centerX" id="pXj-Ve-f1W"/>
+                            <constraint firstItem="QEu-fl-naE" firstAttribute="centerY" secondItem="gfn-fa-qhP" secondAttribute="centerY" id="q5X-aG-9bv"/>
+                            <constraint firstItem="QEu-fl-naE" firstAttribute="leading" secondItem="oH4-Lt-wwa" secondAttribute="leading" constant="20" id="xGK-vF-oCJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0h-3E-fn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="4047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c4l-5O-dj4">
+            <objects>
+                <viewController storyboardIdentifier="TutorialTwoController" id="nhc-th-lBM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qO3-JT-8Uk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSplash" translatesAutoresizingMaskIntoConstraints="NO" id="5Td-Xa-M6e">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HealthyFood" translatesAutoresizingMaskIntoConstraints="NO" id="Xkh-7Y-Nac">
+                                <rect key="frame" x="20" y="348" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9dN-Kn-z0f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create meal plans in minutes, that cater to your dietary goals." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zU-KM-wEL" customClass="ATBodyStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="568" width="374" height="112"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customisable Meal Plans" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afc-yc-ye5" customClass="ATHeaderStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="242" width="374" height="86"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VC Inv" translatesAutoresizingMaskIntoConstraints="NO" id="zBF-7k-Ctu">
+                                <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8mM-k2-FwT"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZSW-Ca-P90"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4k1-hS-HAo"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xkh-7Y-Nac" firstAttribute="centerX" secondItem="qO3-JT-8Uk" secondAttribute="centerX" id="0QZ-YH-9Lg"/>
+                            <constraint firstItem="5Td-Xa-M6e" firstAttribute="top" secondItem="qO3-JT-8Uk" secondAttribute="top" id="77x-i2-TJb"/>
+                            <constraint firstItem="2zU-KM-wEL" firstAttribute="top" secondItem="Xkh-7Y-Nac" secondAttribute="bottom" constant="20" id="GJT-jk-2bu"/>
+                            <constraint firstItem="zBF-7k-Ctu" firstAttribute="leading" secondItem="4k1-hS-HAo" secondAttribute="leading" id="HlY-j6-KTd"/>
+                            <constraint firstItem="4k1-hS-HAo" firstAttribute="trailing" secondItem="Xkh-7Y-Nac" secondAttribute="trailing" constant="20" id="Kun-3h-LaW"/>
+                            <constraint firstAttribute="trailing" secondItem="2zU-KM-wEL" secondAttribute="trailing" constant="20" id="M5b-jS-1E8"/>
+                            <constraint firstAttribute="trailing" secondItem="5Td-Xa-M6e" secondAttribute="trailing" id="R5G-hG-Yoa"/>
+                            <constraint firstItem="Xkh-7Y-Nac" firstAttribute="leading" secondItem="4k1-hS-HAo" secondAttribute="leading" constant="20" id="XWL-8n-mNe"/>
+                            <constraint firstItem="4k1-hS-HAo" firstAttribute="trailing" secondItem="afc-yc-ye5" secondAttribute="trailing" constant="20" id="bBi-cZ-2T6"/>
+                            <constraint firstItem="zBF-7k-Ctu" firstAttribute="top" secondItem="4k1-hS-HAo" secondAttribute="top" id="bcB-if-o7Y"/>
+                            <constraint firstItem="Xkh-7Y-Nac" firstAttribute="centerY" secondItem="qO3-JT-8Uk" secondAttribute="centerY" id="c2t-IG-wkv"/>
+                            <constraint firstAttribute="bottom" secondItem="5Td-Xa-M6e" secondAttribute="bottom" id="chu-e7-mIT"/>
+                            <constraint firstItem="Xkh-7Y-Nac" firstAttribute="top" secondItem="afc-yc-ye5" secondAttribute="bottom" constant="20" id="j3n-BA-yL3"/>
+                            <constraint firstItem="5Td-Xa-M6e" firstAttribute="leading" secondItem="qO3-JT-8Uk" secondAttribute="leading" id="nrM-Q0-JX6"/>
+                            <constraint firstItem="afc-yc-ye5" firstAttribute="leading" secondItem="4k1-hS-HAo" secondAttribute="leading" constant="20" id="ode-ft-OyK"/>
+                            <constraint firstItem="2zU-KM-wEL" firstAttribute="leading" secondItem="4k1-hS-HAo" secondAttribute="leading" constant="20" id="zDl-x4-uBs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XT6-Qa-Agh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="4047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RYQ-JB-JP6">
+            <objects>
+                <viewController storyboardIdentifier="TutorialThreeController" id="S8K-AF-SrN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZgH-oP-pOu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSplash" translatesAutoresizingMaskIntoConstraints="NO" id="TLu-nh-cz8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make Your Own Recipes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNq-iB-gKU" customClass="ATHeaderStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="242" width="374" height="86"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VC Inv" translatesAutoresizingMaskIntoConstraints="NO" id="hfJ-9C-49E">
+                                <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7yh-Vl-LTj"/>
+                                    <constraint firstAttribute="width" constant="100" id="xQV-Ob-E7I"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RecipeBook" translatesAutoresizingMaskIntoConstraints="NO" id="0Vz-7Q-2I9">
+                                <rect key="frame" x="20" y="348" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="VjC-a3-wba"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use your own recipes, or choose from our wide range of healthy meals" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtS-yS-XXK" customClass="ATBodyStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="568" width="374" height="112"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kts-th-yd9"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TLu-nh-cz8" firstAttribute="top" secondItem="ZgH-oP-pOu" secondAttribute="top" id="2Vo-Jg-T3j"/>
+                            <constraint firstItem="hfJ-9C-49E" firstAttribute="leading" secondItem="kts-th-yd9" secondAttribute="leading" id="5rL-RG-3iV"/>
+                            <constraint firstItem="0Vz-7Q-2I9" firstAttribute="top" secondItem="kNq-iB-gKU" secondAttribute="bottom" constant="20" id="8oU-pY-WCL"/>
+                            <constraint firstItem="kNq-iB-gKU" firstAttribute="leading" secondItem="kts-th-yd9" secondAttribute="leading" constant="20" id="9R3-UI-adm"/>
+                            <constraint firstAttribute="trailing" secondItem="MtS-yS-XXK" secondAttribute="trailing" constant="20" id="A17-FY-eQK"/>
+                            <constraint firstItem="kts-th-yd9" firstAttribute="trailing" secondItem="0Vz-7Q-2I9" secondAttribute="trailing" constant="20" id="Buf-0d-hAA"/>
+                            <constraint firstItem="0Vz-7Q-2I9" firstAttribute="centerY" secondItem="ZgH-oP-pOu" secondAttribute="centerY" id="Dsz-ZF-P0c"/>
+                            <constraint firstItem="0Vz-7Q-2I9" firstAttribute="centerX" secondItem="ZgH-oP-pOu" secondAttribute="centerX" id="Ldk-9S-5wF"/>
+                            <constraint firstItem="MtS-yS-XXK" firstAttribute="leading" secondItem="kts-th-yd9" secondAttribute="leading" constant="20" id="Rdr-Wr-gGQ"/>
+                            <constraint firstItem="TLu-nh-cz8" firstAttribute="leading" secondItem="kts-th-yd9" secondAttribute="leading" id="XtD-hD-QHJ"/>
+                            <constraint firstItem="hfJ-9C-49E" firstAttribute="top" secondItem="kts-th-yd9" secondAttribute="top" id="a4U-ui-kY8"/>
+                            <constraint firstAttribute="bottom" secondItem="TLu-nh-cz8" secondAttribute="bottom" id="aKP-td-mkY"/>
+                            <constraint firstItem="TLu-nh-cz8" firstAttribute="trailing" secondItem="kts-th-yd9" secondAttribute="trailing" id="hTs-jn-Mue"/>
+                            <constraint firstItem="MtS-yS-XXK" firstAttribute="top" secondItem="0Vz-7Q-2I9" secondAttribute="bottom" constant="20" id="m6L-AY-9Gb"/>
+                            <constraint firstAttribute="trailing" secondItem="kNq-iB-gKU" secondAttribute="trailing" constant="20" id="tik-K5-sSB"/>
+                            <constraint firstItem="0Vz-7Q-2I9" firstAttribute="leading" secondItem="kts-th-yd9" secondAttribute="leading" constant="20" id="uPs-Ul-Lrb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcj-Ou-Iw7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="4047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bqX-mZ-RZ2">
+            <objects>
+                <viewController storyboardIdentifier="TutorialFourController" id="LkB-sH-FpW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EpP-4Q-BGl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSplash" translatesAutoresizingMaskIntoConstraints="NO" id="6BV-f3-V9X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Share with clients" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mu-BX-4rS" customClass="ATHeaderStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="285" width="374" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VC Inv" translatesAutoresizingMaskIntoConstraints="NO" id="inv-Uh-k6C">
+                                <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2wb-iG-uQy"/>
+                                    <constraint firstAttribute="width" constant="100" id="bq4-HH-1sN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RunningShoes" translatesAutoresizingMaskIntoConstraints="NO" id="uR4-Lv-wzU">
+                                <rect key="frame" x="20" y="348" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ch7-QV-kvK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a library of plans, receive invites to use other’s, or share your own! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOR-ff-zCZ" customClass="ATBodyStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="568" width="374" height="149.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B3s-uD-Pv0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uR4-Lv-wzU" firstAttribute="leading" secondItem="B3s-uD-Pv0" secondAttribute="leading" constant="20" id="3jd-3m-l3c"/>
+                            <constraint firstItem="5Mu-BX-4rS" firstAttribute="leading" secondItem="B3s-uD-Pv0" secondAttribute="leading" constant="20" id="4NT-P5-nEy"/>
+                            <constraint firstItem="WOR-ff-zCZ" firstAttribute="leading" secondItem="B3s-uD-Pv0" secondAttribute="leading" constant="20" id="4dD-3a-ScX"/>
+                            <constraint firstItem="6BV-f3-V9X" firstAttribute="trailing" secondItem="EpP-4Q-BGl" secondAttribute="trailing" id="6oY-aa-sh9"/>
+                            <constraint firstItem="inv-Uh-k6C" firstAttribute="top" secondItem="B3s-uD-Pv0" secondAttribute="top" id="Crd-fY-ttj"/>
+                            <constraint firstItem="6BV-f3-V9X" firstAttribute="top" secondItem="EpP-4Q-BGl" secondAttribute="top" id="IfY-yM-Qlk"/>
+                            <constraint firstAttribute="bottom" secondItem="6BV-f3-V9X" secondAttribute="bottom" id="MVA-VF-cbG"/>
+                            <constraint firstItem="uR4-Lv-wzU" firstAttribute="top" secondItem="5Mu-BX-4rS" secondAttribute="bottom" constant="20" id="NHq-vd-tiI"/>
+                            <constraint firstAttribute="trailing" secondItem="WOR-ff-zCZ" secondAttribute="trailing" constant="20" id="S6M-JI-66U"/>
+                            <constraint firstItem="uR4-Lv-wzU" firstAttribute="centerY" secondItem="EpP-4Q-BGl" secondAttribute="centerY" id="V5j-Xe-ntm"/>
+                            <constraint firstItem="B3s-uD-Pv0" firstAttribute="trailing" secondItem="5Mu-BX-4rS" secondAttribute="trailing" constant="20" id="XsY-Ue-FTl"/>
+                            <constraint firstItem="inv-Uh-k6C" firstAttribute="leading" secondItem="B3s-uD-Pv0" secondAttribute="leading" id="fdH-Gz-JEN"/>
+                            <constraint firstItem="WOR-ff-zCZ" firstAttribute="top" secondItem="uR4-Lv-wzU" secondAttribute="bottom" constant="20" id="jFW-ZP-1Wp"/>
+                            <constraint firstItem="6BV-f3-V9X" firstAttribute="leading" secondItem="EpP-4Q-BGl" secondAttribute="leading" id="r0a-ar-05M"/>
+                            <constraint firstItem="B3s-uD-Pv0" firstAttribute="trailing" secondItem="uR4-Lv-wzU" secondAttribute="trailing" constant="20" id="vv2-MI-HbV"/>
+                            <constraint firstItem="uR4-Lv-wzU" firstAttribute="centerX" secondItem="EpP-4Q-BGl" secondAttribute="centerX" id="yfx-qp-6hY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP4-Vb-RHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4107" y="4047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="INh-9q-IGf">
+            <objects>
+                <viewController storyboardIdentifier="TutorialFiveController" id="tbq-a5-cyU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQs-SX-Kbv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSplash" translatesAutoresizingMaskIntoConstraints="NO" id="kIc-qm-Njv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VC Inv" translatesAutoresizingMaskIntoConstraints="NO" id="hy8-dv-7U2">
+                                <rect key="frame" x="0.0" y="44" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="RrM-59-iwF"/>
+                                    <constraint firstAttribute="width" constant="100" id="eCv-rg-74D"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to Begin?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-GD-jLd" customClass="ATHeaderStyle" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="355" width="374" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVs-Xr-Afi" customClass="ATSelectionButton" customModule="FoodPlanner_" customModuleProvider="target">
+                                <rect key="frame" x="20" y="418" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rMS-1R-XIa"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P6z-rI-5dj"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CVs-Xr-Afi" firstAttribute="leading" secondItem="P6z-rI-5dj" secondAttribute="leading" constant="20" id="05n-UG-tQy"/>
+                            <constraint firstItem="P6z-rI-5dj" firstAttribute="trailing" secondItem="CVs-Xr-Afi" secondAttribute="trailing" constant="20" id="3LF-vm-1fj"/>
+                            <constraint firstItem="kIc-qm-Njv" firstAttribute="top" secondItem="uQs-SX-Kbv" secondAttribute="top" id="8CZ-Df-jcJ"/>
+                            <constraint firstAttribute="bottom" secondItem="kIc-qm-Njv" secondAttribute="bottom" id="RAk-Cl-QRL"/>
+                            <constraint firstItem="hy8-dv-7U2" firstAttribute="leading" secondItem="P6z-rI-5dj" secondAttribute="leading" id="SKt-Cm-8bV"/>
+                            <constraint firstItem="kIc-qm-Njv" firstAttribute="leading" secondItem="uQs-SX-Kbv" secondAttribute="leading" id="ax0-NR-WSk"/>
+                            <constraint firstItem="P6z-rI-5dj" firstAttribute="trailing" secondItem="cUd-GD-jLd" secondAttribute="trailing" constant="20" id="e0V-UY-79n"/>
+                            <constraint firstAttribute="trailing" secondItem="kIc-qm-Njv" secondAttribute="trailing" id="jDL-eP-AAX"/>
+                            <constraint firstItem="CVs-Xr-Afi" firstAttribute="centerY" secondItem="uQs-SX-Kbv" secondAttribute="centerY" id="kc1-9A-l9Z"/>
+                            <constraint firstItem="cUd-GD-jLd" firstAttribute="leading" secondItem="P6z-rI-5dj" secondAttribute="leading" constant="20" id="n8W-wi-yuQ"/>
+                            <constraint firstItem="hy8-dv-7U2" firstAttribute="top" secondItem="P6z-rI-5dj" secondAttribute="top" id="pDW-rB-TQL"/>
+                            <constraint firstItem="CVs-Xr-Afi" firstAttribute="top" secondItem="cUd-GD-jLd" secondAttribute="bottom" constant="20" id="wi7-wI-wtZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToD-c0-urZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5216" y="4047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HealthyFood" width="512" height="512"/>
+        <image name="LoginSplash" width="414" height="896"/>
+        <image name="RecipeBook" width="512" height="512"/>
+        <image name="RunningShoes" width="512" height="512"/>
+        <image name="VC Inv" width="1366" height="1366"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_FoodPlanner__FoodPlanner_UITests {
+  umbrella header "Pods-FoodPlanner+-FoodPlanner+UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
