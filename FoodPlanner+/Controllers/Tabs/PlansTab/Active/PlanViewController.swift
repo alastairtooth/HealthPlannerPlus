@@ -29,38 +29,19 @@ class PlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(messages[1].planName)
-        print(messages[1].planStart)
-        print(messages[1].planFinish)
-        print(messages[1].planAlert)
-        print(messages[1].foodImage)
+//        setupNavigationBarItems()
         
         tableView.dataSource = self
         tableView.delegate = self
         
         //Registering the NIB with the tableview
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-        
-//      Setup NavBar
-        self.tabBarController?.navigationItem.titleView = nil;
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.tabBarController?.navigationItem.largeTitleDisplayMode = .always
-        self.tabBarController?.navigationItem.title = NSLocalizedString("Meal_Plans", comment: "Meal Plans")
-        
-        
-        print("SOMETHING 2")
-        
-    }
+            }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         
-        print("SOMETHING 3")
-        
-        super.viewWillAppear(animated)
-        self.tabBarController?.navigationItem.titleView = nil;
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.tabBarController?.navigationItem.largeTitleDisplayMode = .always
-        self.tabBarController?.navigationItem.title = NSLocalizedString("Meal_Plans", comment: "Meal Plans")
         
     }
     
@@ -70,14 +51,12 @@ class PlanViewController: UIViewController {
 extension PlanViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        print("SOMETHING 4 \(messages.count)")
+
         return messages.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("SOMETHING 5")
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! PlanCell
         cell.planTitle.text = messages[indexPath.row].planName
         cell.startDate.text = messages[indexPath.row].planStart
@@ -93,8 +72,6 @@ extension PlanViewController: UITableViewDataSource {
 extension PlanViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print("SOMETHING 6")
         
          tableView.deselectRow(at: indexPath, animated: true)
         
