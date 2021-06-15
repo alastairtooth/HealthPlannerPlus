@@ -21,6 +21,23 @@
 		C02E22D62664731C0004B54B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22D52664731C0004B54B /* GradientView.swift */; };
 		C02E22DF2664A91D0004B54B /* PlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22DD2664A91D0004B54B /* PlanCell.swift */; };
 		C02E22E02664A91D0004B54B /* PlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02E22DE2664A91D0004B54B /* PlanCell.xib */; };
+		C02E22E22665F5210004B54B /* NavBarSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22E12665F5200004B54B /* NavBarSettings.swift */; };
+		C02E22E42665F6270004B54B /* MyPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22E32665F6270004B54B /* MyPlansViewController.swift */; };
+		C02E22E62666167D0004B54B /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22E52666167C0004B54B /* SegmentedControl.swift */; };
+		C02E22EC2671A33B0004B54B /* PreviousPlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22EB2671A33B0004B54B /* PreviousPlansViewController.swift */; };
+		C02E22EF2671C0F50004B54B /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22EE2671C0F50004B54B /* BrowseViewController.swift */; };
+		C02E22F32671C19B0004B54B /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22F12671C19B0004B54B /* BrowseTableViewCell.swift */; };
+		C02E22F42671C19B0004B54B /* BrowseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02E22F22671C19B0004B54B /* BrowseTableViewCell.xib */; };
+		C02E22F72671C4A80004B54B /* BrowseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22F52671C4A80004B54B /* BrowseCollectionViewCell.swift */; };
+		C02E22F82671C4A80004B54B /* BrowseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02E22F62671C4A80004B54B /* BrowseCollectionViewCell.xib */; };
+		C02E22FA2671E7040004B54B /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22F92671E7040004B54B /* TableViewCellModel.swift */; };
+		C02E22FC2671E74D0004B54B /* CollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22FB2671E74D0004B54B /* CollectionViewCellModel.swift */; };
+		C02E22FE2671E7830004B54B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02E22FD2671E7830004B54B /* Colors.swift */; };
+		C06FC9E526730E4A00751BE3 /* PlanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC9E426730E4A00751BE3 /* PlanDetailsViewController.swift */; };
+		C06FC9E9267316D300751BE3 /* MealPlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC9E7267316D300751BE3 /* MealPlanTableViewCell.swift */; };
+		C06FC9EA267316D300751BE3 /* MealPlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06FC9E8267316D300751BE3 /* MealPlanTableViewCell.xib */; };
+		C06FC9ED267317F900751BE3 /* MealTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06FC9EB267317F900751BE3 /* MealTableCollectionViewCell.swift */; };
+		C06FC9EE267317F900751BE3 /* MealTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C06FC9EC267317F900751BE3 /* MealTableCollectionViewCell.xib */; };
 		C071386B2529600A002269F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071386A2529600A002269F8 /* AppDelegate.swift */; };
 		C071386D2529600A002269F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071386C2529600A002269F8 /* SceneDelegate.swift */; };
 		C07138722529600A002269F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07138702529600A002269F8 /* Main.storyboard */; };
@@ -78,6 +95,23 @@
 		C02E22D52664731C0004B54B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		C02E22DD2664A91D0004B54B /* PlanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCell.swift; sourceTree = "<group>"; };
 		C02E22DE2664A91D0004B54B /* PlanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanCell.xib; sourceTree = "<group>"; };
+		C02E22E12665F5200004B54B /* NavBarSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarSettings.swift; sourceTree = "<group>"; };
+		C02E22E32665F6270004B54B /* MyPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlansViewController.swift; sourceTree = "<group>"; };
+		C02E22E52666167C0004B54B /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		C02E22EB2671A33B0004B54B /* PreviousPlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousPlansViewController.swift; sourceTree = "<group>"; };
+		C02E22EE2671C0F50004B54B /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		C02E22F12671C19B0004B54B /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
+		C02E22F22671C19B0004B54B /* BrowseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseTableViewCell.xib; sourceTree = "<group>"; };
+		C02E22F52671C4A80004B54B /* BrowseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCollectionViewCell.swift; sourceTree = "<group>"; };
+		C02E22F62671C4A80004B54B /* BrowseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowseCollectionViewCell.xib; sourceTree = "<group>"; };
+		C02E22F92671E7040004B54B /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		C02E22FB2671E74D0004B54B /* CollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellModel.swift; sourceTree = "<group>"; };
+		C02E22FD2671E7830004B54B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C06FC9E426730E4A00751BE3 /* PlanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailsViewController.swift; sourceTree = "<group>"; };
+		C06FC9E7267316D300751BE3 /* MealPlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanTableViewCell.swift; sourceTree = "<group>"; };
+		C06FC9E8267316D300751BE3 /* MealPlanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealPlanTableViewCell.xib; sourceTree = "<group>"; };
+		C06FC9EB267317F900751BE3 /* MealTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableCollectionViewCell.swift; sourceTree = "<group>"; };
+		C06FC9EC267317F900751BE3 /* MealTableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableCollectionViewCell.xib; sourceTree = "<group>"; };
 		C07138672529600A002269F8 /* FoodPlanner+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodPlanner+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C071386A2529600A002269F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C071386C2529600A002269F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,9 +193,7 @@
 		C02E22CB266388A00004B54B /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				C02E22CD2663B9E10004B54B /* PlanViewController.swift */,
-				C02E22DD2664A91D0004B54B /* PlanCell.swift */,
-				C02E22DE2664A91D0004B54B /* PlanCell.xib */,
+				C02E22E92671A2B00004B54B /* PlansTab */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -169,6 +201,7 @@
 		C02E22CC266388AC0004B54B /* Plan Management */ = {
 			isa = PBXGroup;
 			children = (
+				C02E22E32665F6270004B54B /* MyPlansViewController.swift */,
 				C01D7F56266222FE00938E65 /* PlannerPageViewController.swift */,
 			);
 			path = "Plan Management";
@@ -193,6 +226,69 @@
 				C02E22D52664731C0004B54B /* GradientView.swift */,
 			);
 			path = Plan;
+			sourceTree = "<group>";
+		};
+		C02E22E92671A2B00004B54B /* PlansTab */ = {
+			isa = PBXGroup;
+			children = (
+				C02E22EA2671A2BE0004B54B /* Active */,
+				C02E22ED2671A34E0004B54B /* Previous */,
+				C02E22F02671C1660004B54B /* Browse */,
+				C06FC9E6267316A200751BE3 /* MealPlanScreen */,
+			);
+			path = PlansTab;
+			sourceTree = "<group>";
+		};
+		C02E22EA2671A2BE0004B54B /* Active */ = {
+			isa = PBXGroup;
+			children = (
+				C02E22CD2663B9E10004B54B /* PlanViewController.swift */,
+				C02E22DD2664A91D0004B54B /* PlanCell.swift */,
+				C02E22DE2664A91D0004B54B /* PlanCell.xib */,
+			);
+			path = Active;
+			sourceTree = "<group>";
+		};
+		C02E22ED2671A34E0004B54B /* Previous */ = {
+			isa = PBXGroup;
+			children = (
+				C02E22EB2671A33B0004B54B /* PreviousPlansViewController.swift */,
+			);
+			path = Previous;
+			sourceTree = "<group>";
+		};
+		C02E22F02671C1660004B54B /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				C02E22EE2671C0F50004B54B /* BrowseViewController.swift */,
+				C02E22F12671C19B0004B54B /* BrowseTableViewCell.swift */,
+				C02E22F22671C19B0004B54B /* BrowseTableViewCell.xib */,
+				C02E22F52671C4A80004B54B /* BrowseCollectionViewCell.swift */,
+				C02E22F62671C4A80004B54B /* BrowseCollectionViewCell.xib */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		C02E22FF2671EC970004B54B /* BrowseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C02E22F92671E7040004B54B /* TableViewCellModel.swift */,
+				C02E22FB2671E74D0004B54B /* CollectionViewCellModel.swift */,
+				C02E22FD2671E7830004B54B /* Colors.swift */,
+			);
+			path = BrowseTableView;
+			sourceTree = "<group>";
+		};
+		C06FC9E6267316A200751BE3 /* MealPlanScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C06FC9E426730E4A00751BE3 /* PlanDetailsViewController.swift */,
+				C06FC9E7267316D300751BE3 /* MealPlanTableViewCell.swift */,
+				C06FC9E8267316D300751BE3 /* MealPlanTableViewCell.xib */,
+				C06FC9EB267317F900751BE3 /* MealTableCollectionViewCell.swift */,
+				C06FC9EC267317F900751BE3 /* MealTableCollectionViewCell.xib */,
+			);
+			path = MealPlanScreen;
 			sourceTree = "<group>";
 		};
 		C071385E2529600A002269F8 = {
@@ -275,11 +371,13 @@
 		C07138AA25296FA5002269F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C02E22FF2671EC970004B54B /* BrowseTableView */,
 				C02E22D4266472240004B54B /* Plan */,
 				C07138B825297D04002269F8 /* Assets */,
 				C07138C625298B6C002269F8 /* Constants.swift */,
 				C0CC6C5B252DBC2200C9C18C /* ErrorHandling.swift */,
 				C02E22C726637D8E0004B54B /* IntroData.swift */,
+				C02E22E12665F5200004B54B /* NavBarSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +389,7 @@
 				C0F4216025A6EE6E00D3F05D /* OptionButton.swift */,
 				C07138C1252987BA002269F8 /* TextField.swift */,
 				C07138CC2529944F002269F8 /* TextStyle.swift */,
+				C02E22E52666167C0004B54B /* SegmentedControl.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -407,7 +506,11 @@
 				C0E7D84A252AF5A800C17111 /* GoogleService-Info.plist in Resources */,
 				C02E22E02664A91D0004B54B /* PlanCell.xib in Resources */,
 				C02E22C626637B730004B54B /* PlanCreator.storyboard in Resources */,
+				C02E22F42671C19B0004B54B /* BrowseTableViewCell.xib in Resources */,
+				C06FC9EA267316D300751BE3 /* MealPlanTableViewCell.xib in Resources */,
+				C06FC9EE267317F900751BE3 /* MealTableCollectionViewCell.xib in Resources */,
 				C07138772529600E002269F8 /* Assets.xcassets in Resources */,
+				C02E22F82671C4A80004B54B /* BrowseCollectionViewCell.xib in Resources */,
 				C07138722529600A002269F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,24 +641,37 @@
 			files = (
 				C07138CD2529944F002269F8 /* TextStyle.swift in Sources */,
 				C07138B425297CDD002269F8 /* MainPageController.swift in Sources */,
+				C02E22FC2671E74D0004B54B /* CollectionViewCellModel.swift in Sources */,
 				C02E22D62664731C0004B54B /* GradientView.swift in Sources */,
 				C0F4216125A6EE6F00D3F05D /* OptionButton.swift in Sources */,
+				C02E22FE2671E7830004B54B /* Colors.swift in Sources */,
 				C07138752529600A002269F8 /* FoodPlanner_.xcdatamodeld in Sources */,
 				C02E22D32664721B0004B54B /* PlanCells.swift in Sources */,
+				C06FC9ED267317F900751BE3 /* MealTableCollectionViewCell.swift in Sources */,
+				C06FC9E9267316D300751BE3 /* MealPlanTableViewCell.swift in Sources */,
 				C02E22CA266388820004B54B /* LogoController.swift in Sources */,
 				C07138BA25297D39002269F8 /* SelectionButton.swift in Sources */,
+				C06FC9E526730E4A00751BE3 /* PlanDetailsViewController.swift in Sources */,
 				C01D7F57266222FE00938E65 /* PlannerPageViewController.swift in Sources */,
+				C02E22EC2671A33B0004B54B /* PreviousPlansViewController.swift in Sources */,
 				C07138C2252987BA002269F8 /* TextField.swift in Sources */,
+				C02E22F32671C19B0004B54B /* BrowseTableViewCell.swift in Sources */,
 				C0E7D8B3252C375400C17111 /* LogInPopUpVC.swift in Sources */,
+				C02E22EF2671C0F50004B54B /* BrowseViewController.swift in Sources */,
 				C0CC6C5C252DBC2200C9C18C /* ErrorHandling.swift in Sources */,
 				C02E22DF2664A91D0004B54B /* PlanCell.swift in Sources */,
 				C02E22C826637D8E0004B54B /* IntroData.swift in Sources */,
+				C02E22E22665F5210004B54B /* NavBarSettings.swift in Sources */,
+				C02E22F72671C4A80004B54B /* BrowseCollectionViewCell.swift in Sources */,
+				C02E22FA2671E7040004B54B /* TableViewCellModel.swift in Sources */,
 				C01D7F592663467300938E65 /* IntroViewController.swift in Sources */,
 				C071386B2529600A002269F8 /* AppDelegate.swift in Sources */,
 				C02E22CE2663B9E10004B54B /* PlanViewController.swift in Sources */,
 				C02E22D026646FBA0004B54B /* PlanData.swift in Sources */,
+				C02E22E42665F6270004B54B /* MyPlansViewController.swift in Sources */,
 				C07138AF25297374002269F8 /* LogInScreenViewController.swift in Sources */,
 				C071386D2529600A002269F8 /* SceneDelegate.swift in Sources */,
+				C02E22E62666167D0004B54B /* SegmentedControl.swift in Sources */,
 				C07138C725298B6C002269F8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

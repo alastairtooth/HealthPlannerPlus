@@ -5,17 +5,32 @@
 //  Created by Alastair Tooth on 4/10/20.
 //
 
+import Foundation
 import UIKit
 
 struct K {
     
+    //General References
     static let registerSegue    = "registerSegue"   //movement from register to main
     static let loginSegue       = "loginSegue"      //movement from login to main
     static let loginPressed     = "loginPressed"    //movement from register to login
+    
+    //Plan Cell References
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "PlanCell"
     static let collectionCell = "DateCell"
     
+    //Browse Collection and Tableview Cell References
+    static let browseCollectionViewCell = "BrowseCollectionViewCell"
+    static let collectionViewCellID = "collectionviewcellid"
+    static let browseTableViewCell = "BrowseTableViewCell"
+    static let tableViewCellID = "tableviewcellid"
+    
+    //MealPlan Collection and Tableview Cell References
+    static let MealTableCollectionViewCell = "MealTableCollectionViewCell"
+    static let mealCollectionViewID = "mealCollectionViewID"
+    static let MealPlanTableViewCell = "MealPlanTableViewCell"
+    static let mealTableViewID = "mealTableViewID"
     
     struct Colour {
         static let background = UIColor(red: 0.95, green: 0.95, blue: 0.97, alpha: 1.00) // #f1f3f8 LIGHTEST
@@ -43,3 +58,6 @@ struct K {
     
     
 }
+
+//Everything below is for the Tableview with an inbuilt scrollable collectionviewcell
+

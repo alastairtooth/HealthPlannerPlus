@@ -71,3 +71,138 @@ struct PlanData {
     ]
     
 }
+
+
+//Data Structure for Plan Details Screen
+
+struct MealTableViewCellModel {
+    var category: String
+    var subcategory: [String]
+    var meals: [[MealPlanCellModel]]
+}
+
+struct MealPlanCellModel {
+    var meal: UIImage
+    var name: String
+}
+
+struct weekMealPlan {
+    var mealObjectsArray: [MealTableViewCellModel] = [
+        MealTableViewCellModel(
+            category: "Monday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+            ]),
+        MealTableViewCellModel(
+            category: "Tuesday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+        MealTableViewCellModel(
+            category: "Wednesday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+        MealTableViewCellModel(
+            category: "Thursday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+        MealTableViewCellModel(
+            category: "Friday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+        MealTableViewCellModel(
+            category: "Saturday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+        MealTableViewCellModel(
+            category: "Sunday",
+            subcategory: ["Meals", "Snacks"],
+            meals: [
+                
+                //Meals
+                [MealPlanCellModel(meal: UIImage(named: "Breakfast")!, name: "Breakfast"),
+                 MealPlanCellModel(meal: UIImage(named: "Lunch")!, name: "Lunch"),
+                 MealPlanCellModel(meal: UIImage(named: "Dinner")!, name: "Dinner"),
+                 MealPlanCellModel(meal: UIImage(named: "cake-slice")!, name: "Dessert")],
+                
+                //Snacks
+                [MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 1"),
+                 MealPlanCellModel(meal: UIImage(named: "carrot")!, name: "Snack 2"),
+                 MealPlanCellModel(meal: UIImage(named: "biscuits")!, name: "Snack 3")]
+                
+            ]),
+    ]
+}

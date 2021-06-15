@@ -16,10 +16,7 @@ class PlanViewController: UIViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
-    
-//    var message: [Plan] = [
-//        Plan(planName: "KetoCrazy", planStart: "12/01/2021", planFinish: "12/10/2021", planAlert: "No Invites Sent", foodImage: UIImage(named: "Breakfast")!)]
-    
+      
     var messages: [Plan] = [
         Plan(planName: "KetoCrazy", planStart: "12/01/2021", planFinish: "12/10/2021", planAlert: "No Invites Sent", foodImage: UIImage(named: "Breakfast")!),
         Plan(planName: "Nothing but Noodles", planStart: "06/04/2020",  planFinish: "19/11/2021", planAlert: "", foodImage: UIImage(named: "Dinner")!),
@@ -29,30 +26,24 @@ class PlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setupNavigationBarItems()
-        
         tableView.dataSource = self
         tableView.delegate = self
         
         //Registering the NIB with the tableview
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
-            }
-    
-
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
         
     }
     
-    
 }
+
+
 
 extension PlanViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return messages.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,7 +57,6 @@ extension PlanViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 extension PlanViewController: UITableViewDelegate {
@@ -75,7 +65,7 @@ extension PlanViewController: UITableViewDelegate {
         
          tableView.deselectRow(at: indexPath, animated: true)
         
-        self.performSegue(withIdentifier: "detailSegue", sender: self)
+        self.performSegue(withIdentifier: "activePlanSegue", sender: self)
         
         
         print(indexPath.row)
